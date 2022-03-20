@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Clase 5</title>
+</head>
+<body>
+    <hi>Crear Cuenta</hi>
+    <fieldset>
+        <legend >Informaci&oacute;n Personal</legend><!--para acentos-->
+        <form action="../clase4/index.html" method="post"> <!--post oculta datos en la url-->
+            <label >Nombre *</label>           
+            <input type="text" name="nombre" placeholder="ingrese nombre">
+            <label >Apellido *</label>
+            <input type="text" name="apellido" placeholder="ingrese su apellido">
+            <br>
+            <label >Direccion de email *</label>
+            <input type="email" name="email" placeholder="ejemplo@gmail.com">
+            <br>
+            <label >Nro Documento *</label>
+            <input type="text" name="documeno" placeholder="ingrese su DNI">
+            <br>
+            <label >Tiene Hijos</label>
+            <input type="number" name="th" value="si" checked>
+            <br>
+            <label >Casado</label>
+            <span>Si</span>
+            <input type="radio"  name="casado" value="Si">
+            <span>No</span>
+            <input type="radio"  name="casado" value="No" checked>
+            <br>
+            <label >Cantidad</label>
+            <select >
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+            </select>
+            <br>
+
+
+            <input type="checkbox">
+            <input type="submit" value="Enviar">
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>form con tabla</legend>
+        <form >
+        <table >
+            <tr>
+                <td>
+                    <label >nombre</label><br>
+                    <input type="text" nam>
+                </td>
+                <td>
+                    <label >apellido</label><br>
+                    <input type="text" nam>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                <label >Direccion de email</label><br>
+                <input type="email" name="email" placeholder="ejemplo@mail.com">
+               </td>
+            </tr>
+            <tr>
+                <td>
+                    <label >Nro Docum </label><br>
+                    <input type="text" name="dni" min="0" max="99999999">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Guardar">
+
+                </td>
+            </tr>
+        </table>
+      </form>
+    </fieldset>
+    
+</body>
+</html>
