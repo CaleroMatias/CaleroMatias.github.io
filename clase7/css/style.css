@@ -1,0 +1,31 @@
+
+/* selector de etiquetas */
+/*
+a{
+    text-decoration: none;
+    cursor: pointer;
+   cursor: progress;}
+   */
+
+
+
+body{
+    background-color: rebeccapurple;
+}
+
+/* aplico css por medio de id*/
+#idsection{
+    background-color: gray;
+}
+#idnav{
+    background-color: beige;
+}
+#linkActive{
+    color:rgb(235, 8, 8);
+    cursor: zoom-in;
+    text-decoration: none;
+
+
+}
+
+/*aplico estilos por clases*/
