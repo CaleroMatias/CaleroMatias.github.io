@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Palette+Mosaic&family=Red+Hat+Mono:wght@300&display=swap');
+
+h1{
+    /*tamaño letra*/
+    font-size: 10px;
+    /*fuente*/
+    font-family: 'Courier New', Courier, monospace;
+    /* estilos de texto*/
+    font-style: italic;
+
+     /* grosor de texto*/
+     font-weight: 100;
+
+     /*espacio entre palabras*/
+     word-spacing: 5 px;
+
+     /*texto justificado*/
+     text-align: justify;
+
+     /*todas letras matyusculas*/
+     text-transform: uppercase;
+
+     /*todas letras minusculas*/
+     text-transform: lowercase;
+      /*la primere de cada palabr mayuscula*/
+      text-transform: capitalize;
+
+       /*sombra*/
+        text-shadow: 1px 5px royalblue           /* (horizontal-vertical-color) */
+
+
+
+}
+h2{
+    font-family: 'Red Hat Mono', monospace;}
+
+.clasli{
+    list-style: circle;
+}
+.clasli a{
+    text-decoration: none;
+}
+section table{
+    border: 2px solid black;
+}
+section table td{
+    border: 1px solid rgb(11, 236, 105);
+}
+section table tr th{
+    border: 2px solid cyan;
+}
