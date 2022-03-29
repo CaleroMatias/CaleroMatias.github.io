@@ -1,0 +1,18 @@
+
+
+#IDLOGO{
+  margin: 5px;
+  width: 150px;
+  height:100px;
+}
+#idnav{
+  background-color: #0d1a1e;
+  text-align: center;
+}
+header a{
+  margin: 10px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: brown;
+}
+    
