@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /*selectores por atributo*/
+      
+       [href]{
+           background-color: blueviolet;
+       }
+       /*elemento con contenido exacto*/
+       [href="nosotros.html"]{
+        background-color: yellow;   
+       }
+
+       /* Para los que comienzan con algo */
+       [href^="i"]{
+           background-color: aqua;
+       }
+        /* que contengan algo algo */
+        [href*="s"]{
+           background-color: violet;
+       }
+        /* Para los que terminen con algo */
+        [href$="e"]{
+           background-color: aqua;
+       }
+
+
+       /*Por elemento y algun atributo*/
+
+       img {
+           width:150px;
+           height: 100px;
+      }
+      img[alt="s1"]{
+          border: 3px solid red;
+      }
+      
+      img[alt="s2"]{
+          border: 5px solid grey;
+      }
+
+      .imagenes1 img[alt="s1"]{
+          border: 2px solid yellow;
+      }
+      .imagenes1 img[alt="s2"]::before{
+          content: "333";
+    }
+
+
+      .imagenes2 img[alt="s1"]{
+          border: 2px solid orange;
+      }
+      .imagenes2 img[alt="s2"]:hover{
+          border-radius: 50%;
+      }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">inicio</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="imagene">Immagenes</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1> selectores por atributos</h1>
+        <section>
+            <div class="imagenes1">
+            <img src="../clase3/imgsimpson.jpg" alt="s1">
+            <img src="../clase3/imgsimpson.jpg" alt="s2">
+            </div>
+            <div class="imagenes2">
+                <img src="../clase3/imgsimpson.jpg" alt="s1">
+                <img src="../clase3/imgsimpson.jpg" alt="s2">
+            </div>
+        </section>
+        
+    </main>
+    
+</body>
+</html>

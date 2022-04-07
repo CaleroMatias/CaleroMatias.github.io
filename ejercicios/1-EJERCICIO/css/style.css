@@ -1,18 +1,65 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Palette+Mosaic&family=Red+Hat+Mono:wght@300&display=swap');
 
+
+header{
+  width: 100%;
+  position: fixed;
+}
+main{ padding-top: 50px;
+}
+body{
+  margin-top: 0px;
+}
 #IDLOGO{
   margin: 5px;
-  width: 150px;
+  width: 100px;
   height:100px;
 }
-#idnav{
-  background-color: #0d1a1e;
-  text-align: center;
+
+
+header{
+ margin: 0px;
+  background-color: beige;
+  /*border: 2px solid black;
+  border-radius: 10px;*/
 }
-header a{
-  margin: 10px;
-  font-family: sans-serif;
+header div div div{
+  
+  align-items: center;
+}
+
+header div div {
+  
+  display: flex;
+ 
+}
+
+a{
+  margin: 27px;
   text-decoration: none;
-  color: brown;
+  text-size-adjust: 10px;
+  font-size: 16px;
 }
-    
+
+header div  {
+  margin: auto; 
+}
+ul {
+   list-style-type: none;     
+   padding: 0px;
+   margin-left: auto;
+   margin-right: auto;
+   display:flex
+}
+#idSectionNuestraEmpresa {
+ padding: 50px;
+ background-color: black;
+ color: white;
+ 
+}
+section div {
+
+  padding: 10px;
+ }
+  

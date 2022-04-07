@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* elimino los margenes*/
+        *{
+            margin: 0px;
+        }
+        /*el div es un elemento bloque que procura ocupar todo espacio*/
+        .divBox{
+            margin: 15px;
+            border: 2px solid red;
+            padding: 25px 10px; 
+            width: 45%;
+            /*el box-sizing mantiene el tamaño del whidth y calcula los bordes ,padding etc.*/
+            box-sizing: border-box;
+            display: inline-block;
+            /*centar texto*/
+            text-align: center;
+        }
+
+        /*ESPECIFICIDAD*/
+
+        /*
+        !important > inline > id >clase
+        */
+        h3{
+           color: aqua ;
+        }
+        #sec1 {
+            color: blue !important;
+        }
+        /*centrat sec2*/
+        #sec2{
+           /*text-align: center; -una manera de centrar*/
+           /*otra manera*/
+           width:150px ;
+           margin: 0 auto;          
+        }
+        
+        /* MEDIDAS
+
+           > absolutas:1px=0.26 mm aprox
+
+           >relativas: varian--> em: si el div es de 10 px > 1em= 10px
+                                                             2em=20px             
+                                rem: root element<HTML> es de 16px siemre sera de 16 px
+        
+        */
+        
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="divBox">
+                <h1>TEXTO</h1>
+            </div>
+            <div class="divBox">
+                <h2>sub titulo</h2>
+            </div>
+        </section >
+        <!--Especificidad // nos permite decirle a un elemnto afectado por varios estilos cual es el predominante-->
+        <section id="sec2">
+            <h3 id="sec1" style="color: blueviolet;">SUB TITULO3</h3>
+
+        </section>
+    </main>
+</body>
+</html>

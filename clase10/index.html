@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /*
+      pseudo clases
+      aplicar algo a algun elemento ej:     
+      */
+      a:visited{
+          color: red;
+          font: size 1.5em;
+        }
+        /*  pasar el mouse por arriba*/
+        a:hover{
+            color: brown;
+            text-decoration: line-through;
+        }
+        /* cuando pinchamos el elemento y mantenemos presionado*/
+        a:active{
+            color: chartreuse;
+            text-transform: uppercase;
+        }
+
+        /*nth-child(n) aplica cambios a elementos especificos*/
+        /*ejemplo a elementos para pongo even para elementos im
+        pares y odd pares*/
+
+        div p:nth-child(even){
+            color: rgb(39, 117, 207);
+        }
+       table tr:nth-child(1){
+           color: black!important;
+
+       }
+       table {
+           border: 1px solid red;
+       } 
+       
+       table tr:nth-child(odd){
+           color: aqua;
+           background-color: coral;
+       }
+       table tr:nth-child(even){
+           color:coral;
+           background-color: aqua;
+       }
+
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <main>
+       <section>
+           <p>texto</p>
+           <a href="http://www.google.com.ar">ir a google</a>
+           <a href="pseudoelementos.html">ir a pseudo elementos</a>
+           <a href="selectorXatributos.html">IR A SELECTORES </a>
+       </section>
+       <section>
+           <div>
+               <p>texto1</p>
+               <p>texto2</p>
+               <p>texto3</p>
+               <p>texto4</p>
+               <p>texto5</p>
+           </div>
+
+           <table>
+               <tr class="titulos">
+                  <th>ID</th>
+                  <th>Nombre</th>
+                  <th>Precio</th>                  
+               </tr>
+                <tr>
+                    <td>25</td>
+                    <td>teclado</td>
+                    <td>700</td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>mouse</td>
+                    <td>1500</td>
+                </tr>
+                <tr>
+                    <td>40</td>
+                    <td>parlantes</td>
+                    <td>2500</td>
+                </tr>
+               
+           </table>
+
+
+       </section>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <Style>
+
+        /* me permiten agregarla a una estiqueta html o elemento por medio de 
+        " :: " y el pseudo elemento*/
+
+
+        /* agrego algo antes*/
+        h1::before{
+            content: '*·*';
+        }
+        /* para agregar algo despues*/
+        h1::after{
+            content: '<#>';
+        }
+        h2::first-letter{
+            border: 2px solid violet;
+        }
+
+
+
+    </Style>
+</head>
+<body>
+    <main>
+        <head>
+            <a href="index.html">Volver</a>
+        </head>
+        <section>
+            <h1>PSEUDO ELEMENTOS</h1>
+            <h2>Sub titutlo</h2>
+        </section>
+    </main>
+</body>
+</html>
