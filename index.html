@@ -1,83 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">    
-    <title>Clase 5</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilos.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
-<body>
-    <h1>Crear Cuenta</h1>
-    <fieldset>
-        <legend >Informaci&oacute;n Personal</legend><!--para acentos-->
-        <form action="../clase4/index.html" method="post"> <!--post oculta datos en la url-->
-            <label >Nombre *</label>           
-            <input type="text" name="nombre" placeholder="ingrese nombre">
-            <label >Apellido *</label>
-            <input type="text" name="apellido" placeholder="ingrese su apellido">
-            <br>
-            <label >Direccion de email *</label>
-            <input type="email" name="email" placeholder="ejemplo@gmail.com">
-            <br>
-            <label >Nro Documento *</label>
-            <input type="text" name="documeno" placeholder="ingrese su DNI">
-            <br>
-            <label >Tiene Hijos</label>
-            <input type="number" name="th" value="si" checked>
-            <br>
-            <label >Casado</label>
-            <span>Si</span>
-            <input type="radio"  name="casado" value="Si">
-            <span>No</span>
-            <input type="radio"  name="casado" value="No" checked>
-            <br>
-            <label >Cantidad</label>
-            <select >
-               <option value="1">1</option>
-               <option value="2">2</option>
-               <option value="3">3</option>
-            </select>
-            <br>
+<body class="container-fluid" style="position: absolute;">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../imagenes/codoacodo.png" alt="" width="15%" class="d-inline-block align-text-top">
+                    Conf Bs As
+                  </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>              
+              <div class="collapse navbar-collapse" id="navbarNavDropdown" >
+                <ul class="navbar-nav" >
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">La conferencia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Los oradores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">el lugar y la fecha</a>
+                  </li>  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Convertite en orador</a>
+                  </li>  
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: green;" href="#">Compra tickets</a>
+                  </li>              
+                </ul>
+              </div>
+            
+            </div>
+          </nav>
+          </nav>
+    </header>
+    <main>        
+        <section id="intro" >
+
+          <div id="carouselExampleSlidesOnly" class="carousel slide col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img id="principal" class="d-block w-100" src="../imagenes/ba1.jpg" alt="First slide">                
+              </div> 
+              <div id="compra" class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5"> 
+                <h2>Conf Bs As</h2>
+                <p class="bienvenido">Bs As lega por primera vez a Argentina.Un evento para compartir con nuestra comunidad el conocimiento y la experiencia
+                    de los expertos que estan creando el futuro de internet. Ven conocer a miembros de evento, a otros estudiantes
+                    y a los oradores de primer nivel  que tenemos para ti. Te esperamos!
+                </p>
+                <a href="" class="btn btn-primary" style="background-color: transparent; border: 1px solid white;"  role="button">Quiero ser orador</a>
+                <a href="" class="btn btn-primary comprar" style="background-color: rgb(69, 182, 69);border: 1px solid rgb(69, 182, 69);" role="button">Comprar tickets</a>
+              </div>             
+            </div>
+          </div>                          
+          
+        </section>       
+     
+        <section class="container-fluid" id="conoce">
+          <div >
+            <h6>CONOCE A LOS</h6>
+            <H4>ORADORES</H4> </div>
+            <div class="row" id="cards">
+                <div class="card col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4" style="size: 50rem; ">
+                  <img src="../imagenes/steve.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h6 style="background-color: yellow; ">JavaScript</h6>
+                    <h6  style="background-color: rgb(37, 152, 187); color: white; ">React</h6>
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nostrum recusandae quidem totam facere. Deserunt, magnam illum ipsum eveniet dignissimos corrupti. Cupiditate, magnam nobis! Modi molestias eligendi eos doloribus quos.</p>                    
+                  </div>
+                </div>
+                <div class="card col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                  <img src="../imagenes/bill.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h6 style="background-color: yellow;  ">JavaScript</h6>
+                    <h6 style="background-color: rgb(37, 152, 187);color: white; ">React</h6>
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum perferendis reprehenderit, et labore neque tenetur nulla dolor eum maiores illum vel, a dolorem, mollitia voluptatum! Odit eveniet praesentium officiis veniam?</p>                    
+                  </div>
+                </div>
+                <div class="card col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                  <img src="../imagenes/ada.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h6  style="background-color: rgb(83, 90, 92); color: white;">Negocios</h6>
+                    <h6  style="background-color: red;color: white; ">Startups</h6>
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, necessitatibus at odio quaerat earum iste sunt et quisquam ducimus dignissimos blanditiis esse modi saepe provident aspernatur eius laborum recusandae. Et.</p>                    
+                  </div>
+                </div>
+              </div>
+        </section>
+        
+        <section Class="container-fluid">
+          <div class="row">
+              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" style="padding: 0px;">
+               <img  id="hono" src="../imagenes/honolulu.jpg"   alt="">
+              </div>
+               <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 " style="background-color: gray;">
+              <h5 >Special title treatment</h5>
+              <p>With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>               
+              </div>           
+          </div>
+        </section>
+       
+        <section>
+          <div id="orador">
+            <h6>CONVIERTETE EN UN</h6>
+            <H4>ORADOR</H4>
+          </div>
 
 
-            <input type="checkbox">
-            <input type="submit" value="Enviar">
-        </form>
-    </fieldset>
-    <fieldset>
-        <legend>form con tabla</legend>
-        <form >
-        <table >
-            <tr>
-                <td>
-                    <label >nombre</label><br>
-                    <input type="text" nam>
-                </td>
-                <td>
-                    <label >apellido</label><br>
-                    <input type="text" nam>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                <label >Direccion de email</label><br>
-                <input type="email" name="email" placeholder="ejemplo@mail.com">
-               </td>
-            </tr>
-            <tr>
-                <td>
-                    <label >Nro Docum </label><br>
-                    <input type="text" name="dni" min="0" max="99999999">
+        </section>
 
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="submit" value="Guardar">
+        <section class="container-fluid" style="width: 50%;">
+          <div class="row">
+            <label >Anotate como orador para dar una <a href="">charla ignite </a> Cuentanos de que quieres hablar!</label>
+          <div class="mb-3 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">            
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+          </div>
+          <div class="mb-3 col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">            
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
+          </div>
+          <div class="mb-3 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">           
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Sobre que quieres hablar?"></textarea>
+          </div>
+         <label id="recordatorio">Recuerda incluir un titulo para tu charla</label>
+         <button type="button" class="btn btn-primary btn-lg btn-block" style="background-color: rgb(69, 182, 69);border: 1px solid rgb(69, 182, 69);">Enviar</button>
+        </div>
+        </section>
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" style="color: white!important;">Preguntas frecuentes</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" style="color: white!important;">Contactenos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" style="color: white!important;">Prensa</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" style="color: white!important;">Conferencias</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" style="color: white!important;">Terminos y condiciones</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" style="color: white!important;">Privacidad</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" style="color: white!important;">Estudiantes</a></li>
+          </ul>
+          <p class="text-center text-muted " style="color: white!important;">© 2022 Codo Codo, BA</p>
+        </footer> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-                </td>
-            </tr>
-        </table>
-      </form>
-    </fieldset>
+    </main> 
     
 </body>
 </html>
