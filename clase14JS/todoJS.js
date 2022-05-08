@@ -162,3 +162,35 @@ console.log(mayoresA1);
 let mayoresA2confilter =vector.filter(num => num>2);
 console.log(mayoresA2confilter);
 
+// clase 16
+// atentciona la comilla!!!!!!!!!!!!
+const cantiadpersonas =prompt('ingrese un valor');
+alert(`se van a cargar ${cantiadpersonas} presonas`);
+
+let personas =[];
+for (let i=0; i<cantiadpersonas;i++)
+{
+    const Nombre = prompt('ingrese se Nombre');
+    const Apellido = prompt('ingrese se Apellido')
+    // creo un objeto persona con 2 variables con una funcion
+    const persona = construirPersona(Nombre,Apellido)
+    personas.push(persona)
+    
+}
+// recorro para mostrar quienes estan en el vector
+
+for( const persona of personas)
+{
+    console.log(persona)
+}
+
+
+function construirPersona(pNombre,pApellido){
+    const persona={
+        Nombre:pNombre,
+        Apellid:pApellido
+    };
+    return persona
+}
+
+
